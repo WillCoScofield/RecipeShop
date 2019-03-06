@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2>
+      Shopping List!
+    </h2>
+    <hr />
+
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- edit / add to shopping list feature -->
+        <app-shopping-list-edit></app-shopping-list-edit>
+        <br>
+        <ul class="list-group">
+          <a
+            *ngFor="let eachIngredient of ingredients"
+            style="cursor: pointer;"
+            class="list-group-item"
+          >
+            {{ eachIngredient.name }} ({{ eachIngredient.amount }})</a
+          >
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
