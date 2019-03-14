@@ -2,21 +2,20 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <app-header></app-header>
+      <app-header (chosenFeature)="onRender($event)"></app-header>
     </div>
   </div>
 </div>
 
 <!-- content container split columns -->
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-6">
-      <app-shopping-list></app-shopping-list>
-    </div>
-    <div class="container">
-      <div class="col-xs-6">
-        <app-recipe-book></app-recipe-book>
-      </div>
+    <div class="col-xs-12">
+      <app-recipe-book *ngIf="loadThisFeature === 'recipe'"></app-recipe-book>
+      <app-shopping-list
+        *ngIf="loadThisFeature !== 'recipe'"
+      ></app-shopping-list>
     </div>
   </div>
 </div>

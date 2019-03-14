@@ -23,6 +23,21 @@ export class RecipeListFeatureComponent implements OnInit {
       "Simply a test recipe we're using",
       "https://c1.staticflickr.com/6/5737/30622968353_35e06fcb52_b.jpg"
     ),
+    new RecipeModel(
+      "Test Recipe",
+      "Simply a test recipe we're using",
+      "https://c1.staticflickr.com/6/5737/30622968353_35e06fcb52_b.jpg"
+    ),
+    new RecipeModel(
+      "Test Recipe",
+      "Simply a test recipe we're using",
+      "https://c1.staticflickr.com/6/5737/30622968353_35e06fcb52_b.jpg"
+    ),
+    new RecipeModel(
+      "Test Recipe",
+      "Simply a test recipe we're using",
+      "https://c1.staticflickr.com/6/5737/30622968353_35e06fcb52_b.jpg"
+    ),
   ];
   constructor() {}
 

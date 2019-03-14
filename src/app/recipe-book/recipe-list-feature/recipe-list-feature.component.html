@@ -1,19 +1,31 @@
-<button class="btn btn-success">NewRecipe</button>
-<hr />
-<a href="" class="list-group-item" *ngFor="let eachRecipe of recipes">
-  <h1 class="list-group-item-heading">
-    {{ eachRecipe.name }}
-  </h1>
-  <h3 class="list-group-item-text">
-    <app-recipe-detail-feature></app-recipe-detail-feature>
-    {{ eachRecipe.description }}
-  </h3>
-  <span>
-    <img
-      class="img-responsive"
-      [src]="eachRecipe.imagePath"
-      alt="{{ eachRecipe.name }}"
-      style="max-height: 50px;"
-    />
-  </span>
-</a>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">NewRecipe</button>
+    <hr />
+    <div class="row">
+      <div class="scrollmenu">
+        <ul class="list-inline" *ngFor="let eachRecipe of recipes">
+          <div class="col-xs-4">
+            <a href="" class="list-group-item">
+              <h1 class="list-group-item-heading">
+                {{ eachRecipe.name }}
+              </h1>
+              <h3 class="list-group-item-text">
+                <app-recipe-detail-feature></app-recipe-detail-feature>
+                {{ eachRecipe.description }}
+              </h3>
+              <span>
+                <img
+                  class="img-responsive"
+                  [src]="eachRecipe.imagePath"
+                  alt="{{ eachRecipe.name }}"
+                  style="max-height: 50px;"
+                />
+              </span>
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
